@@ -46,6 +46,7 @@ namespace EATON_MONITOR_55
                         string planqty = !(r["planqty"] is DBNull) ? (Convert.ToInt32(r["planqty"]) == 0 ? "0" : string.Format("{0:#,###}", Convert.ToInt32(r["planqty"]))) : "0";      // 계획수량
                         string cnt = !(r["cnt"] is DBNull) ? (Convert.ToInt32(r["cnt"]) == 0 ? "0" : string.Format("{0:#,###}", Convert.ToInt32(r["cnt"]))) : "0";                      // 실적수량
                         string badcnt = !(r["badcnt"] is DBNull) ? (Convert.ToInt32(r["badcnt"]) == 0 ? "0" : string.Format("{0:#,###}", Convert.ToInt32(r["badcnt"]))) : "0";          // 불량수량
+                        string percent = $"{r["per"]}%";                                                                                                                                // 퍼센트
                         #endregion
                         #region 불량수량 총합 계산 ( 스플킷 제외 모두 합산 )
                         if (str != "Spool Kit 조립")
@@ -93,17 +94,23 @@ namespace EATON_MONITOR_55
                                 {
                                     Home.LBL_Total_Plan.Text = planqty;
                                     Home.LBL_Total_Prod.Text = cnt;
-                                    #region 퍼센테이지 계산
-                                    double percent = Convert.ToDouble(r["cnt"]) / Convert.ToDouble(r["planqty"]) * 100;
-                                    if (double.IsNaN(percent) || double.IsInfinity(percent))
-                                        percent = 0;
+                                    Home.LBL_Total_Percent.Text = percent;
+                                    // UPH
+                                    Home.LBL_Uph_Plan.Text = (r["uph_planqty"] is DBNull || Convert.ToInt32(r["uph_planqty"]) == 0) ? "0" : string.Format("{0:#,###}", Convert.ToInt32(r["uph_planqty"]));
+                                    Home.LBL_Uph_Prod.Text = (r["uph_cnt"] is DBNull || Convert.ToInt32(r["uph_cnt"]) == 0) ? "0" : string.Format("{0:#,###}", Convert.ToInt32(r["uph_cnt"]));
+                                    #region UPH 퍼센테이지 산출
+                                    int uph_plan = Convert.ToInt32(Home.LBL_Uph_Plan.Text.Replace(",", ""));
+                                    int uph_prod = Convert.ToInt32(Home.LBL_Uph_Prod.Text.Replace(",", ""));
+                                    double per = Convert.ToDouble(uph_prod) / Convert.ToDouble(uph_plan) * 100;
+                                    if (double.IsNaN(per) || double.IsInfinity(per))
+                                        Home.LBL_Uph_Percent.Text = "0%";
                                     else
-                                        percent = Math.Truncate(percent);
+                                    {
+                                        per = Percent_Calcurate(per);
+                                        Home.LBL_Uph_Percent.Text = $"{per}%";
+                                    }
                                     #endregion
-                                    Home.LBL_Total_Percent.Text = $"{percent}%";
                                 }));
-                                Home.UPH_PlanQty = Convert.ToInt32(r["planqty"]);
-                                Home.UPH_ProdQty = Convert.ToInt32(r["cnt"]);
                                 break;
                         }
                         #endregion
@@ -121,7 +128,60 @@ namespace EATON_MONITOR_55
                     Record.Error(((Exception)getobj).ToString());
                 else if (getobj.GetType().Name == "SqlException")
                     Record.Error(((SqlException)getobj).ToString());
+                else
+                {
+                    Home.Invoke(new MethodInvoker(delegate ()
+                    {
+                        // 스플킷
+                        Home.LBL_Spl_Prod.Text = "0";
+                        // 플러그
+                        Home.LBL_Plug_Plan.Text = "0";
+                        Home.LBL_Plug_Prod.Text = "0";
+                        Home.LBL_Plug_Bad.Text = "0";
+                        // 리크
+                        Home.LBL_Link_Plan.Text = "0";
+                        Home.LBL_Link_Prod.Text = "0";
+                        Home.LBL_Link_Bad.Text = "0";
+                        // 성능
+                        Home.LBL_Per_Plan.Text = "0";
+                        Home.LBL_Per_Prod.Text = "0";
+                        Home.LBL_Per_Bad.Text = "0";
+                        // 실적소계
+                        Home.LBL_Total_Plan.Text = "0";
+                        Home.LBL_Total_Prod.Text = "0";
+                        Home.LBL_Total_Percent.Text = "0%";
+                        Home.LBL_Uph_Plan.Text = "0";
+                        Home.LBL_Uph_Prod.Text = "0";
+                        Home.LBL_Uph_Percent.Text = "0%";
+                    }));
+                }
                 #endregion
+            }
+            catch (Exception ex)
+            {
+                Record.Error(ex.ToString());
+            }
+            #endregion
+            
+            getobj = MES_DB.Return_Query($"SELECT * FROM PR210T WHERE (PRODMAC = 'F210003' OR PRODMAC = 'F210004') AND (PROCCD = 'B025' OR PROCCD = 'B045') AND PRODDT = '{DateTime.Now:yyyyMMdd}'", 0);
+            #region MES 데이터 ( 스캔실패 수량 )
+            try
+            {
+                if (getobj.GetType().Name == "DataTable")
+                {
+                    Home.Invoke(new MethodInvoker(delegate ()
+                    {
+                        string fail_cnt = string.Format("{0:#,###}", ((DataTable)getobj).Rows.Count);
+                        Home.LBL_Scan_Fail.Text = fail_cnt;
+                    }));
+                }
+                else
+                {
+                    Home.Invoke(new MethodInvoker(delegate ()
+                    {
+                        Home.LBL_Scan_Fail.Text = "0";
+                    }));
+                }
             }
             catch (Exception ex)
             {
@@ -208,7 +268,7 @@ namespace EATON_MONITOR_55
                                     break;
 
                                 case "성능 자동 TEST 2":
-                                    if (DateTime.Now.Month == dbtime.Month && DateTime.Now.Day != dbtime.Day)
+                                    if (DateTime.Now.Month == dbtime.Month && DateTime.Now.Day == dbtime.Day)
                                         Home.Cir_Per_2.Circle_Color_Chagne(WhatColor(state));
                                     else
                                         Home.Cir_Per_2.Circle_Color_Chagne(Color.Yellow);
@@ -245,6 +305,29 @@ namespace EATON_MONITOR_55
             }
             #endregion
         }
+
+        #region 소수점 반올림
+        private double Percent_Calcurate(double percent)
+        {
+            if (percent.ToString().Contains("."))
+            {
+                string[] pers = percent.ToString().Trim().Split('.');
+                double nums = Convert.ToDouble(pers[1]);
+                if (nums >= 5)
+                {
+                    double return_value = Convert.ToDouble(pers[0]) + 1;
+                    return return_value;
+                }
+                else
+                {
+                    double return_value = Convert.ToDouble(pers[0]);
+                    return return_value;
+                }
+            }
+            else
+                return percent;
+        }
+        #endregion
 
         #region 설비상태값에 따른 색변화
         private Color WhatColor(int value)

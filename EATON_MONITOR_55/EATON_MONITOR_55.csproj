@@ -37,7 +37,7 @@
   <ItemGroup>
     <Reference Include="MS_SQL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>F:\GST\DLL\MS_SQL\MS_SQL\bin\Debug\MS_SQL.dll</HintPath>
+      <HintPath>..\..\..\0. 참조DLL\MS_SQL\MS_SQL\bin\Debug\MS_SQL.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />

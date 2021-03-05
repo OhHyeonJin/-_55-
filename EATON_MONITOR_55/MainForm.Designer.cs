@@ -64,12 +64,20 @@ namespace EATON_MONITOR_55
             this.label25 = new System.Windows.Forms.Label();
             this.panel42 = new System.Windows.Forms.Panel();
             this.label26 = new System.Windows.Forms.Label();
+            this.Cir_Per_4 = new EATON_MONITOR_55.Circle();
             this.label19 = new System.Windows.Forms.Label();
+            this.Cir_Per_3 = new EATON_MONITOR_55.Circle();
             this.label18 = new System.Windows.Forms.Label();
+            this.Cir_Spl = new EATON_MONITOR_55.Circle();
             this.label17 = new System.Windows.Forms.Label();
+            this.Cir_Per_2 = new EATON_MONITOR_55.Circle();
+            this.Cir_Per_1 = new EATON_MONITOR_55.Circle();
             this.label16 = new System.Windows.Forms.Label();
+            this.Cir_Link = new EATON_MONITOR_55.Circle();
             this.label15 = new System.Windows.Forms.Label();
+            this.Cir_Laser = new EATON_MONITOR_55.Circle();
             this.label14 = new System.Windows.Forms.Label();
+            this.Cir_Plug = new EATON_MONITOR_55.Circle();
             this.label13 = new System.Windows.Forms.Label();
             this.PB_Img = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -103,11 +111,11 @@ namespace EATON_MONITOR_55
             this.panel13 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.LBL_Plug_Plan = new System.Windows.Forms.Label();
+            this.label2424 = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.LBL_Plug_Prod = new System.Windows.Forms.Label();
+            this.label2322 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.LBL_Plug_Mode = new System.Windows.Forms.Label();
+            this.label2525 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel18 = new System.Windows.Forms.Panel();
@@ -137,23 +145,25 @@ namespace EATON_MONITOR_55
             this.panel44 = new System.Windows.Forms.Panel();
             this.LBL_Spl_Bad = new System.Windows.Forms.Label();
             this.panel45 = new System.Windows.Forms.Panel();
-            this.LBL_Plug_Bad = new System.Windows.Forms.Label();
+            this.LBL_Scan_Fail = new System.Windows.Forms.Label();
             this.panel46 = new System.Windows.Forms.Panel();
             this.LBL_Link_Bad = new System.Windows.Forms.Label();
             this.panel47 = new System.Windows.Forms.Panel();
             this.LBL_Per_Bad = new System.Windows.Forms.Label();
             this.panel48 = new System.Windows.Forms.Panel();
             this.LBL_Total_Bad = new System.Windows.Forms.Label();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label27 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.LBL_Plug_Plan = new System.Windows.Forms.Label();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.LBL_Plug_Prod = new System.Windows.Forms.Label();
+            this.panel49 = new System.Windows.Forms.Panel();
+            this.LBL_Plug_Bad = new System.Windows.Forms.Label();
+            this.panel54 = new System.Windows.Forms.Panel();
+            this.LBL_Plug_Mode = new System.Windows.Forms.Label();
             this.Timer_Change_Timer = new System.Windows.Forms.Timer(this.components);
             this.Img_Change_Timer = new System.Windows.Forms.Timer(this.components);
-            this.Cir_Per_4 = new EATON_MONITOR_55.Circle();
-            this.Cir_Per_3 = new EATON_MONITOR_55.Circle();
-            this.Cir_Spl = new EATON_MONITOR_55.Circle();
-            this.Cir_Per_2 = new EATON_MONITOR_55.Circle();
-            this.Cir_Per_1 = new EATON_MONITOR_55.Circle();
-            this.Cir_Link = new EATON_MONITOR_55.Circle();
-            this.Cir_Laser = new EATON_MONITOR_55.Circle();
-            this.Cir_Plug = new EATON_MONITOR_55.Circle();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -210,6 +220,11 @@ namespace EATON_MONITOR_55
             this.panel46.SuspendLayout();
             this.panel47.SuspendLayout();
             this.panel48.SuspendLayout();
+            this.panel29.SuspendLayout();
+            this.panel30.SuspendLayout();
+            this.panel31.SuspendLayout();
+            this.panel49.SuspendLayout();
+            this.panel54.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -453,7 +468,7 @@ namespace EATON_MONITOR_55
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(104, 48);
             this.label22.TabIndex = 2;
-            this.label22.Text = "비가동";
+            this.label22.Text = "대기중";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel36
@@ -641,6 +656,16 @@ namespace EATON_MONITOR_55
             this.label26.Text = "자동/수동";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Cir_Per_4
+            // 
+            this.Cir_Per_4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Per_4.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Per_4.Location = new System.Drawing.Point(777, 571);
+            this.Cir_Per_4.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Per_4.Name = "Cir_Per_4";
+            this.Cir_Per_4.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Per_4.TabIndex = 14;
+            // 
             // label19
             // 
             this.label19.Font = new System.Drawing.Font("HY견고딕", 16F);
@@ -652,6 +677,16 @@ namespace EATON_MONITOR_55
             this.label19.TabIndex = 15;
             this.label19.Text = "수동 성능 TEST\r\n(#4)";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cir_Per_3
+            // 
+            this.Cir_Per_3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Per_3.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Per_3.Location = new System.Drawing.Point(691, 459);
+            this.Cir_Per_3.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Per_3.Name = "Cir_Per_3";
+            this.Cir_Per_3.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Per_3.TabIndex = 12;
             // 
             // label18
             // 
@@ -665,6 +700,16 @@ namespace EATON_MONITOR_55
             this.label18.Text = "수동 성능 TEST\r\n(#3)";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Cir_Spl
+            // 
+            this.Cir_Spl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Spl.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Spl.Location = new System.Drawing.Point(348, 786);
+            this.Cir_Spl.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Spl.Name = "Cir_Spl";
+            this.Cir_Spl.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Spl.TabIndex = 10;
+            // 
             // label17
             // 
             this.label17.Font = new System.Drawing.Font("HY견고딕", 16F);
@@ -676,6 +721,26 @@ namespace EATON_MONITOR_55
             this.label17.TabIndex = 11;
             this.label17.Text = "스플킷 조립";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cir_Per_2
+            // 
+            this.Cir_Per_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Per_2.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Per_2.Location = new System.Drawing.Point(864, 21);
+            this.Cir_Per_2.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Per_2.Name = "Cir_Per_2";
+            this.Cir_Per_2.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Per_2.TabIndex = 9;
+            // 
+            // Cir_Per_1
+            // 
+            this.Cir_Per_1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Per_1.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Per_1.Location = new System.Drawing.Point(737, 21);
+            this.Cir_Per_1.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Per_1.Name = "Cir_Per_1";
+            this.Cir_Per_1.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Per_1.TabIndex = 7;
             // 
             // label16
             // 
@@ -689,6 +754,16 @@ namespace EATON_MONITOR_55
             this.label16.Text = "자동 성능 TEST\r\n(#1, #2)";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Cir_Link
+            // 
+            this.Cir_Link.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Link.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Link.Location = new System.Drawing.Point(473, 79);
+            this.Cir_Link.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Link.Name = "Cir_Link";
+            this.Cir_Link.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Link.TabIndex = 5;
+            // 
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("HY견고딕", 16F);
@@ -701,6 +776,16 @@ namespace EATON_MONITOR_55
             this.label15.Text = "리크 TEST";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Cir_Laser
+            // 
+            this.Cir_Laser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Laser.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Laser.Location = new System.Drawing.Point(282, 79);
+            this.Cir_Laser.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Laser.Name = "Cir_Laser";
+            this.Cir_Laser.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Laser.TabIndex = 3;
+            // 
             // label14
             // 
             this.label14.Font = new System.Drawing.Font("HY견고딕", 16F);
@@ -712,6 +797,16 @@ namespace EATON_MONITOR_55
             this.label14.TabIndex = 4;
             this.label14.Text = "레이저 마킹";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // Cir_Plug
+            // 
+            this.Cir_Plug.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.Cir_Plug.BackColor = System.Drawing.Color.DimGray;
+            this.Cir_Plug.Location = new System.Drawing.Point(82, 79);
+            this.Cir_Plug.Margin = new System.Windows.Forms.Padding(0);
+            this.Cir_Plug.Name = "Cir_Plug";
+            this.Cir_Plug.Size = new System.Drawing.Size(80, 50);
+            this.Cir_Plug.TabIndex = 1;
             // 
             // label13
             // 
@@ -871,6 +966,7 @@ namespace EATON_MONITOR_55
             this.LBL_Uph_Percent.TabIndex = 5;
             this.LBL_Uph_Percent.Text = "0%";
             this.LBL_Uph_Percent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Uph_Percent.TextChanged += new System.EventHandler(this.LBL_Uph_Percent_TextChanged);
             // 
             // panel3
             // 
@@ -886,7 +982,7 @@ namespace EATON_MONITOR_55
             // tableLayoutPanel10
             // 
             this.tableLayoutPanel10.ColumnCount = 5;
-            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.0021F));
+            this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30.00209F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.49948F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.49948F));
             this.tableLayoutPanel10.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 17.49948F));
@@ -899,34 +995,40 @@ namespace EATON_MONITOR_55
             this.tableLayoutPanel10.Controls.Add(this.panel10, 1, 1);
             this.tableLayoutPanel10.Controls.Add(this.panel11, 2, 1);
             this.tableLayoutPanel10.Controls.Add(this.panel12, 4, 1);
-            this.tableLayoutPanel10.Controls.Add(this.panel13, 0, 2);
-            this.tableLayoutPanel10.Controls.Add(this.panel14, 1, 2);
-            this.tableLayoutPanel10.Controls.Add(this.panel15, 2, 2);
-            this.tableLayoutPanel10.Controls.Add(this.panel16, 4, 2);
-            this.tableLayoutPanel10.Controls.Add(this.panel17, 0, 3);
-            this.tableLayoutPanel10.Controls.Add(this.panel18, 1, 3);
-            this.tableLayoutPanel10.Controls.Add(this.panel19, 2, 3);
-            this.tableLayoutPanel10.Controls.Add(this.panel20, 4, 3);
-            this.tableLayoutPanel10.Controls.Add(this.panel21, 0, 4);
-            this.tableLayoutPanel10.Controls.Add(this.panel22, 1, 4);
-            this.tableLayoutPanel10.Controls.Add(this.panel23, 2, 4);
-            this.tableLayoutPanel10.Controls.Add(this.panel24, 4, 4);
-            this.tableLayoutPanel10.Controls.Add(this.panel25, 0, 5);
-            this.tableLayoutPanel10.Controls.Add(this.panel26, 1, 5);
-            this.tableLayoutPanel10.Controls.Add(this.panel27, 2, 5);
-            this.tableLayoutPanel10.Controls.Add(this.panel28, 4, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel13, 0, 3);
+            this.tableLayoutPanel10.Controls.Add(this.panel14, 1, 3);
+            this.tableLayoutPanel10.Controls.Add(this.panel15, 2, 3);
+            this.tableLayoutPanel10.Controls.Add(this.panel16, 4, 3);
+            this.tableLayoutPanel10.Controls.Add(this.panel17, 0, 4);
+            this.tableLayoutPanel10.Controls.Add(this.panel18, 1, 4);
+            this.tableLayoutPanel10.Controls.Add(this.panel19, 2, 4);
+            this.tableLayoutPanel10.Controls.Add(this.panel20, 4, 4);
+            this.tableLayoutPanel10.Controls.Add(this.panel21, 0, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel22, 1, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel23, 2, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel24, 4, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel25, 0, 6);
+            this.tableLayoutPanel10.Controls.Add(this.panel26, 1, 6);
+            this.tableLayoutPanel10.Controls.Add(this.panel27, 2, 6);
+            this.tableLayoutPanel10.Controls.Add(this.panel28, 4, 6);
             this.tableLayoutPanel10.Controls.Add(this.panel43, 3, 0);
             this.tableLayoutPanel10.Controls.Add(this.panel44, 3, 1);
-            this.tableLayoutPanel10.Controls.Add(this.panel45, 3, 2);
-            this.tableLayoutPanel10.Controls.Add(this.panel46, 3, 3);
-            this.tableLayoutPanel10.Controls.Add(this.panel47, 3, 4);
-            this.tableLayoutPanel10.Controls.Add(this.panel48, 3, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel45, 3, 3);
+            this.tableLayoutPanel10.Controls.Add(this.panel46, 3, 4);
+            this.tableLayoutPanel10.Controls.Add(this.panel47, 3, 5);
+            this.tableLayoutPanel10.Controls.Add(this.panel48, 3, 6);
+            this.tableLayoutPanel10.Controls.Add(this.panel29, 0, 2);
+            this.tableLayoutPanel10.Controls.Add(this.panel30, 1, 2);
+            this.tableLayoutPanel10.Controls.Add(this.panel31, 2, 2);
+            this.tableLayoutPanel10.Controls.Add(this.panel49, 3, 2);
+            this.tableLayoutPanel10.Controls.Add(this.panel54, 4, 2);
             this.tableLayoutPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel10.Location = new System.Drawing.Point(1, 1);
             this.tableLayoutPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel10.Name = "tableLayoutPanel10";
-            this.tableLayoutPanel10.RowCount = 6;
+            this.tableLayoutPanel10.RowCount = 7;
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel10.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
@@ -943,7 +1045,7 @@ namespace EATON_MONITOR_55
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(0, 0, 1, 1);
-            this.panel5.Size = new System.Drawing.Size(172, 89);
+            this.panel5.Size = new System.Drawing.Size(172, 75);
             this.panel5.TabIndex = 0;
             // 
             // label3
@@ -954,7 +1056,7 @@ namespace EATON_MONITOR_55
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(171, 88);
+            this.label3.Size = new System.Drawing.Size(171, 74);
             this.label3.TabIndex = 0;
             this.label3.Text = "공정명";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -967,7 +1069,7 @@ namespace EATON_MONITOR_55
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(1, 0, 1, 1);
-            this.panel6.Size = new System.Drawing.Size(100, 89);
+            this.panel6.Size = new System.Drawing.Size(100, 75);
             this.panel6.TabIndex = 1;
             // 
             // label4
@@ -978,7 +1080,7 @@ namespace EATON_MONITOR_55
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(1, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 88);
+            this.label4.Size = new System.Drawing.Size(98, 74);
             this.label4.TabIndex = 1;
             this.label4.Text = "계획";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -991,7 +1093,7 @@ namespace EATON_MONITOR_55
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
             this.panel7.Padding = new System.Windows.Forms.Padding(1, 0, 1, 1);
-            this.panel7.Size = new System.Drawing.Size(100, 89);
+            this.panel7.Size = new System.Drawing.Size(100, 75);
             this.panel7.TabIndex = 2;
             // 
             // label5
@@ -1002,7 +1104,7 @@ namespace EATON_MONITOR_55
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(1, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 88);
+            this.label5.Size = new System.Drawing.Size(98, 74);
             this.label5.TabIndex = 1;
             this.label5.Text = "실적";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1015,7 +1117,7 @@ namespace EATON_MONITOR_55
             this.panel8.Margin = new System.Windows.Forms.Padding(0);
             this.panel8.Name = "panel8";
             this.panel8.Padding = new System.Windows.Forms.Padding(1, 0, 0, 1);
-            this.panel8.Size = new System.Drawing.Size(102, 89);
+            this.panel8.Size = new System.Drawing.Size(102, 75);
             this.panel8.TabIndex = 3;
             // 
             // label6
@@ -1026,7 +1128,7 @@ namespace EATON_MONITOR_55
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(1, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(101, 88);
+            this.label6.Size = new System.Drawing.Size(101, 74);
             this.label6.TabIndex = 1;
             this.label6.Text = "운전모드";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1035,11 +1137,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel9.Controls.Add(this.label7);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel9.Location = new System.Drawing.Point(0, 89);
+            this.panel9.Location = new System.Drawing.Point(0, 75);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.panel9.Size = new System.Drawing.Size(172, 133);
+            this.panel9.Size = new System.Drawing.Size(172, 113);
             this.panel9.TabIndex = 4;
             // 
             // label7
@@ -1050,7 +1152,7 @@ namespace EATON_MONITOR_55
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(0, 1);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(171, 131);
+            this.label7.Size = new System.Drawing.Size(171, 111);
             this.label7.TabIndex = 1;
             this.label7.Text = "스플킷 조립";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1059,11 +1161,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel10.Controls.Add(this.LBL_Spl_Plan);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel10.Location = new System.Drawing.Point(172, 89);
+            this.panel10.Location = new System.Drawing.Point(172, 75);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(1);
-            this.panel10.Size = new System.Drawing.Size(100, 133);
+            this.panel10.Size = new System.Drawing.Size(100, 113);
             this.panel10.TabIndex = 5;
             // 
             // LBL_Spl_Plan
@@ -1074,7 +1176,7 @@ namespace EATON_MONITOR_55
             this.LBL_Spl_Plan.ForeColor = System.Drawing.Color.White;
             this.LBL_Spl_Plan.Location = new System.Drawing.Point(1, 1);
             this.LBL_Spl_Plan.Name = "LBL_Spl_Plan";
-            this.LBL_Spl_Plan.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Spl_Plan.Size = new System.Drawing.Size(98, 111);
             this.LBL_Spl_Plan.TabIndex = 2;
             this.LBL_Spl_Plan.Text = "-";
             this.LBL_Spl_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1083,11 +1185,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel11.Controls.Add(this.LBL_Spl_Prod);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel11.Location = new System.Drawing.Point(272, 89);
+            this.panel11.Location = new System.Drawing.Point(272, 75);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
             this.panel11.Padding = new System.Windows.Forms.Padding(1);
-            this.panel11.Size = new System.Drawing.Size(100, 133);
+            this.panel11.Size = new System.Drawing.Size(100, 113);
             this.panel11.TabIndex = 6;
             // 
             // LBL_Spl_Prod
@@ -1098,7 +1200,7 @@ namespace EATON_MONITOR_55
             this.LBL_Spl_Prod.ForeColor = System.Drawing.Color.White;
             this.LBL_Spl_Prod.Location = new System.Drawing.Point(1, 1);
             this.LBL_Spl_Prod.Name = "LBL_Spl_Prod";
-            this.LBL_Spl_Prod.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Spl_Prod.Size = new System.Drawing.Size(98, 111);
             this.LBL_Spl_Prod.TabIndex = 3;
             this.LBL_Spl_Prod.Text = "0";
             this.LBL_Spl_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1108,11 +1210,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel12.Controls.Add(this.LBL_Spl_Mode);
             this.panel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel12.Location = new System.Drawing.Point(472, 89);
+            this.panel12.Location = new System.Drawing.Point(472, 75);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
             this.panel12.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.panel12.Size = new System.Drawing.Size(102, 133);
+            this.panel12.Size = new System.Drawing.Size(102, 113);
             this.panel12.TabIndex = 7;
             // 
             // LBL_Spl_Mode
@@ -1123,7 +1225,7 @@ namespace EATON_MONITOR_55
             this.LBL_Spl_Mode.ForeColor = System.Drawing.Color.White;
             this.LBL_Spl_Mode.Location = new System.Drawing.Point(1, 1);
             this.LBL_Spl_Mode.Name = "LBL_Spl_Mode";
-            this.LBL_Spl_Mode.Size = new System.Drawing.Size(101, 131);
+            this.LBL_Spl_Mode.Size = new System.Drawing.Size(101, 111);
             this.LBL_Spl_Mode.TabIndex = 4;
             this.LBL_Spl_Mode.Text = "자동";
             this.LBL_Spl_Mode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1132,11 +1234,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel13.Controls.Add(this.label8);
             this.panel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel13.Location = new System.Drawing.Point(0, 222);
+            this.panel13.Location = new System.Drawing.Point(0, 301);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.panel13.Size = new System.Drawing.Size(172, 133);
+            this.panel13.Size = new System.Drawing.Size(172, 113);
             this.panel13.TabIndex = 8;
             // 
             // label8
@@ -1147,94 +1249,92 @@ namespace EATON_MONITOR_55
             this.label8.ForeColor = System.Drawing.Color.White;
             this.label8.Location = new System.Drawing.Point(0, 1);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(171, 131);
+            this.label8.Size = new System.Drawing.Size(171, 111);
             this.label8.TabIndex = 1;
-            this.label8.Text = "플러그 조립";
+            this.label8.Text = "스캔실패";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel14
             // 
-            this.panel14.Controls.Add(this.LBL_Plug_Plan);
+            this.panel14.Controls.Add(this.label2424);
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel14.Location = new System.Drawing.Point(172, 222);
+            this.panel14.Location = new System.Drawing.Point(172, 301);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
             this.panel14.Padding = new System.Windows.Forms.Padding(1);
-            this.panel14.Size = new System.Drawing.Size(100, 133);
+            this.panel14.Size = new System.Drawing.Size(100, 113);
             this.panel14.TabIndex = 9;
             // 
-            // LBL_Plug_Plan
+            // label2424
             // 
-            this.LBL_Plug_Plan.BackColor = System.Drawing.Color.SteelBlue;
-            this.LBL_Plug_Plan.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LBL_Plug_Plan.Font = new System.Drawing.Font("HY견고딕", 38F);
-            this.LBL_Plug_Plan.ForeColor = System.Drawing.Color.White;
-            this.LBL_Plug_Plan.Location = new System.Drawing.Point(1, 1);
-            this.LBL_Plug_Plan.Name = "LBL_Plug_Plan";
-            this.LBL_Plug_Plan.Size = new System.Drawing.Size(98, 131);
-            this.LBL_Plug_Plan.TabIndex = 2;
-            this.LBL_Plug_Plan.Text = "0";
-            this.LBL_Plug_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LBL_Plug_Plan.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            this.label2424.BackColor = System.Drawing.Color.SteelBlue;
+            this.label2424.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2424.Font = new System.Drawing.Font("HY견고딕", 50F);
+            this.label2424.ForeColor = System.Drawing.Color.White;
+            this.label2424.Location = new System.Drawing.Point(1, 1);
+            this.label2424.Name = "label2424";
+            this.label2424.Size = new System.Drawing.Size(98, 111);
+            this.label2424.TabIndex = 2;
+            this.label2424.Text = "-";
+            this.label2424.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.LBL_Plug_Prod);
+            this.panel15.Controls.Add(this.label2322);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel15.Location = new System.Drawing.Point(272, 222);
+            this.panel15.Location = new System.Drawing.Point(272, 301);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
             this.panel15.Padding = new System.Windows.Forms.Padding(1);
-            this.panel15.Size = new System.Drawing.Size(100, 133);
+            this.panel15.Size = new System.Drawing.Size(100, 113);
             this.panel15.TabIndex = 10;
             // 
-            // LBL_Plug_Prod
+            // label2322
             // 
-            this.LBL_Plug_Prod.BackColor = System.Drawing.Color.SteelBlue;
-            this.LBL_Plug_Prod.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LBL_Plug_Prod.Font = new System.Drawing.Font("HY견고딕", 38F);
-            this.LBL_Plug_Prod.ForeColor = System.Drawing.Color.White;
-            this.LBL_Plug_Prod.Location = new System.Drawing.Point(1, 1);
-            this.LBL_Plug_Prod.Name = "LBL_Plug_Prod";
-            this.LBL_Plug_Prod.Size = new System.Drawing.Size(98, 131);
-            this.LBL_Plug_Prod.TabIndex = 3;
-            this.LBL_Plug_Prod.Text = "0";
-            this.LBL_Plug_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LBL_Plug_Prod.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            this.label2322.BackColor = System.Drawing.Color.SteelBlue;
+            this.label2322.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2322.Font = new System.Drawing.Font("HY견고딕", 50F);
+            this.label2322.ForeColor = System.Drawing.Color.White;
+            this.label2322.Location = new System.Drawing.Point(1, 1);
+            this.label2322.Name = "label2322";
+            this.label2322.Size = new System.Drawing.Size(98, 111);
+            this.label2322.TabIndex = 3;
+            this.label2322.Text = "-";
+            this.label2322.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.LBL_Plug_Mode);
+            this.panel16.Controls.Add(this.label2525);
             this.panel16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel16.Location = new System.Drawing.Point(472, 222);
+            this.panel16.Location = new System.Drawing.Point(472, 301);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
             this.panel16.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.panel16.Size = new System.Drawing.Size(102, 133);
+            this.panel16.Size = new System.Drawing.Size(102, 113);
             this.panel16.TabIndex = 11;
             // 
-            // LBL_Plug_Mode
+            // label2525
             // 
-            this.LBL_Plug_Mode.BackColor = System.Drawing.Color.SteelBlue;
-            this.LBL_Plug_Mode.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LBL_Plug_Mode.Font = new System.Drawing.Font("HY견고딕", 28F);
-            this.LBL_Plug_Mode.ForeColor = System.Drawing.Color.White;
-            this.LBL_Plug_Mode.Location = new System.Drawing.Point(1, 1);
-            this.LBL_Plug_Mode.Name = "LBL_Plug_Mode";
-            this.LBL_Plug_Mode.Size = new System.Drawing.Size(101, 131);
-            this.LBL_Plug_Mode.TabIndex = 4;
-            this.LBL_Plug_Mode.Text = "자동";
-            this.LBL_Plug_Mode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2525.BackColor = System.Drawing.Color.SteelBlue;
+            this.label2525.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2525.Font = new System.Drawing.Font("HY견고딕", 50F);
+            this.label2525.ForeColor = System.Drawing.Color.White;
+            this.label2525.Location = new System.Drawing.Point(1, 1);
+            this.label2525.Name = "label2525";
+            this.label2525.Size = new System.Drawing.Size(101, 111);
+            this.label2525.TabIndex = 4;
+            this.label2525.Text = "-";
+            this.label2525.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel17
             // 
             this.panel17.Controls.Add(this.label9);
             this.panel17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel17.Location = new System.Drawing.Point(0, 355);
+            this.panel17.Location = new System.Drawing.Point(0, 414);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
             this.panel17.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.panel17.Size = new System.Drawing.Size(172, 133);
+            this.panel17.Size = new System.Drawing.Size(172, 113);
             this.panel17.TabIndex = 12;
             // 
             // label9
@@ -1245,7 +1345,7 @@ namespace EATON_MONITOR_55
             this.label9.ForeColor = System.Drawing.Color.White;
             this.label9.Location = new System.Drawing.Point(0, 1);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(171, 131);
+            this.label9.Size = new System.Drawing.Size(171, 111);
             this.label9.TabIndex = 1;
             this.label9.Text = "리크 TEST";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1254,11 +1354,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel18.Controls.Add(this.LBL_Link_Plan);
             this.panel18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel18.Location = new System.Drawing.Point(172, 355);
+            this.panel18.Location = new System.Drawing.Point(172, 414);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
             this.panel18.Padding = new System.Windows.Forms.Padding(1);
-            this.panel18.Size = new System.Drawing.Size(100, 133);
+            this.panel18.Size = new System.Drawing.Size(100, 113);
             this.panel18.TabIndex = 13;
             // 
             // LBL_Link_Plan
@@ -1269,7 +1369,7 @@ namespace EATON_MONITOR_55
             this.LBL_Link_Plan.ForeColor = System.Drawing.Color.White;
             this.LBL_Link_Plan.Location = new System.Drawing.Point(1, 1);
             this.LBL_Link_Plan.Name = "LBL_Link_Plan";
-            this.LBL_Link_Plan.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Link_Plan.Size = new System.Drawing.Size(98, 111);
             this.LBL_Link_Plan.TabIndex = 2;
             this.LBL_Link_Plan.Text = "0";
             this.LBL_Link_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1279,11 +1379,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel19.Controls.Add(this.LBL_Link_Prod);
             this.panel19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel19.Location = new System.Drawing.Point(272, 355);
+            this.panel19.Location = new System.Drawing.Point(272, 414);
             this.panel19.Margin = new System.Windows.Forms.Padding(0);
             this.panel19.Name = "panel19";
             this.panel19.Padding = new System.Windows.Forms.Padding(1);
-            this.panel19.Size = new System.Drawing.Size(100, 133);
+            this.panel19.Size = new System.Drawing.Size(100, 113);
             this.panel19.TabIndex = 14;
             // 
             // LBL_Link_Prod
@@ -1294,7 +1394,7 @@ namespace EATON_MONITOR_55
             this.LBL_Link_Prod.ForeColor = System.Drawing.Color.White;
             this.LBL_Link_Prod.Location = new System.Drawing.Point(1, 1);
             this.LBL_Link_Prod.Name = "LBL_Link_Prod";
-            this.LBL_Link_Prod.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Link_Prod.Size = new System.Drawing.Size(98, 111);
             this.LBL_Link_Prod.TabIndex = 3;
             this.LBL_Link_Prod.Text = "0";
             this.LBL_Link_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1304,11 +1404,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel20.Controls.Add(this.LBL_Link_Mode);
             this.panel20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel20.Location = new System.Drawing.Point(472, 355);
+            this.panel20.Location = new System.Drawing.Point(472, 414);
             this.panel20.Margin = new System.Windows.Forms.Padding(0);
             this.panel20.Name = "panel20";
             this.panel20.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.panel20.Size = new System.Drawing.Size(102, 133);
+            this.panel20.Size = new System.Drawing.Size(102, 113);
             this.panel20.TabIndex = 15;
             // 
             // LBL_Link_Mode
@@ -1319,7 +1419,7 @@ namespace EATON_MONITOR_55
             this.LBL_Link_Mode.ForeColor = System.Drawing.Color.White;
             this.LBL_Link_Mode.Location = new System.Drawing.Point(1, 1);
             this.LBL_Link_Mode.Name = "LBL_Link_Mode";
-            this.LBL_Link_Mode.Size = new System.Drawing.Size(101, 131);
+            this.LBL_Link_Mode.Size = new System.Drawing.Size(101, 111);
             this.LBL_Link_Mode.TabIndex = 4;
             this.LBL_Link_Mode.Text = "자동";
             this.LBL_Link_Mode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1328,11 +1428,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel21.Controls.Add(this.label10);
             this.panel21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel21.Location = new System.Drawing.Point(0, 488);
+            this.panel21.Location = new System.Drawing.Point(0, 527);
             this.panel21.Margin = new System.Windows.Forms.Padding(0);
             this.panel21.Name = "panel21";
             this.panel21.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.panel21.Size = new System.Drawing.Size(172, 133);
+            this.panel21.Size = new System.Drawing.Size(172, 113);
             this.panel21.TabIndex = 16;
             // 
             // label10
@@ -1343,7 +1443,7 @@ namespace EATON_MONITOR_55
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(0, 1);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(171, 131);
+            this.label10.Size = new System.Drawing.Size(171, 111);
             this.label10.TabIndex = 1;
             this.label10.Text = "성능 TEST";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1352,11 +1452,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel22.Controls.Add(this.LBL_Per_Plan);
             this.panel22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel22.Location = new System.Drawing.Point(172, 488);
+            this.panel22.Location = new System.Drawing.Point(172, 527);
             this.panel22.Margin = new System.Windows.Forms.Padding(0);
             this.panel22.Name = "panel22";
             this.panel22.Padding = new System.Windows.Forms.Padding(1);
-            this.panel22.Size = new System.Drawing.Size(100, 133);
+            this.panel22.Size = new System.Drawing.Size(100, 113);
             this.panel22.TabIndex = 17;
             // 
             // LBL_Per_Plan
@@ -1367,7 +1467,7 @@ namespace EATON_MONITOR_55
             this.LBL_Per_Plan.ForeColor = System.Drawing.Color.White;
             this.LBL_Per_Plan.Location = new System.Drawing.Point(1, 1);
             this.LBL_Per_Plan.Name = "LBL_Per_Plan";
-            this.LBL_Per_Plan.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Per_Plan.Size = new System.Drawing.Size(98, 111);
             this.LBL_Per_Plan.TabIndex = 2;
             this.LBL_Per_Plan.Text = "0";
             this.LBL_Per_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1377,11 +1477,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel23.Controls.Add(this.LBL_Per_Prod);
             this.panel23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel23.Location = new System.Drawing.Point(272, 488);
+            this.panel23.Location = new System.Drawing.Point(272, 527);
             this.panel23.Margin = new System.Windows.Forms.Padding(0);
             this.panel23.Name = "panel23";
             this.panel23.Padding = new System.Windows.Forms.Padding(1);
-            this.panel23.Size = new System.Drawing.Size(100, 133);
+            this.panel23.Size = new System.Drawing.Size(100, 113);
             this.panel23.TabIndex = 18;
             // 
             // LBL_Per_Prod
@@ -1392,7 +1492,7 @@ namespace EATON_MONITOR_55
             this.LBL_Per_Prod.ForeColor = System.Drawing.Color.White;
             this.LBL_Per_Prod.Location = new System.Drawing.Point(1, 1);
             this.LBL_Per_Prod.Name = "LBL_Per_Prod";
-            this.LBL_Per_Prod.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Per_Prod.Size = new System.Drawing.Size(98, 111);
             this.LBL_Per_Prod.TabIndex = 3;
             this.LBL_Per_Prod.Text = "0";
             this.LBL_Per_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1402,11 +1502,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel24.Controls.Add(this.LBL_Per_Mode);
             this.panel24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel24.Location = new System.Drawing.Point(472, 488);
+            this.panel24.Location = new System.Drawing.Point(472, 527);
             this.panel24.Margin = new System.Windows.Forms.Padding(0);
             this.panel24.Name = "panel24";
             this.panel24.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.panel24.Size = new System.Drawing.Size(102, 133);
+            this.panel24.Size = new System.Drawing.Size(102, 113);
             this.panel24.TabIndex = 19;
             // 
             // LBL_Per_Mode
@@ -1417,7 +1517,7 @@ namespace EATON_MONITOR_55
             this.LBL_Per_Mode.ForeColor = System.Drawing.Color.White;
             this.LBL_Per_Mode.Location = new System.Drawing.Point(1, 1);
             this.LBL_Per_Mode.Name = "LBL_Per_Mode";
-            this.LBL_Per_Mode.Size = new System.Drawing.Size(101, 131);
+            this.LBL_Per_Mode.Size = new System.Drawing.Size(101, 111);
             this.LBL_Per_Mode.TabIndex = 4;
             this.LBL_Per_Mode.Text = "자동";
             this.LBL_Per_Mode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1426,11 +1526,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel25.Controls.Add(this.label11);
             this.panel25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel25.Location = new System.Drawing.Point(0, 621);
+            this.panel25.Location = new System.Drawing.Point(0, 640);
             this.panel25.Margin = new System.Windows.Forms.Padding(0);
             this.panel25.Name = "panel25";
             this.panel25.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
-            this.panel25.Size = new System.Drawing.Size(172, 137);
+            this.panel25.Size = new System.Drawing.Size(172, 118);
             this.panel25.TabIndex = 20;
             // 
             // label11
@@ -1442,7 +1542,7 @@ namespace EATON_MONITOR_55
             this.label11.Location = new System.Drawing.Point(0, 1);
             this.label11.Margin = new System.Windows.Forms.Padding(0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(171, 135);
+            this.label11.Size = new System.Drawing.Size(171, 116);
             this.label11.TabIndex = 1;
             this.label11.Text = "당일실적 계";
             this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1451,11 +1551,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel26.Controls.Add(this.LBL_Total_Plan);
             this.panel26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel26.Location = new System.Drawing.Point(172, 621);
+            this.panel26.Location = new System.Drawing.Point(172, 640);
             this.panel26.Margin = new System.Windows.Forms.Padding(0);
             this.panel26.Name = "panel26";
             this.panel26.Padding = new System.Windows.Forms.Padding(1);
-            this.panel26.Size = new System.Drawing.Size(100, 137);
+            this.panel26.Size = new System.Drawing.Size(100, 118);
             this.panel26.TabIndex = 21;
             // 
             // LBL_Total_Plan
@@ -1466,7 +1566,7 @@ namespace EATON_MONITOR_55
             this.LBL_Total_Plan.ForeColor = System.Drawing.Color.White;
             this.LBL_Total_Plan.Location = new System.Drawing.Point(1, 1);
             this.LBL_Total_Plan.Name = "LBL_Total_Plan";
-            this.LBL_Total_Plan.Size = new System.Drawing.Size(98, 135);
+            this.LBL_Total_Plan.Size = new System.Drawing.Size(98, 116);
             this.LBL_Total_Plan.TabIndex = 2;
             this.LBL_Total_Plan.Text = "0";
             this.LBL_Total_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1476,11 +1576,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel27.Controls.Add(this.LBL_Total_Prod);
             this.panel27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel27.Location = new System.Drawing.Point(272, 621);
+            this.panel27.Location = new System.Drawing.Point(272, 640);
             this.panel27.Margin = new System.Windows.Forms.Padding(0);
             this.panel27.Name = "panel27";
             this.panel27.Padding = new System.Windows.Forms.Padding(1);
-            this.panel27.Size = new System.Drawing.Size(100, 137);
+            this.panel27.Size = new System.Drawing.Size(100, 118);
             this.panel27.TabIndex = 22;
             // 
             // LBL_Total_Prod
@@ -1491,7 +1591,7 @@ namespace EATON_MONITOR_55
             this.LBL_Total_Prod.ForeColor = System.Drawing.Color.White;
             this.LBL_Total_Prod.Location = new System.Drawing.Point(1, 1);
             this.LBL_Total_Prod.Name = "LBL_Total_Prod";
-            this.LBL_Total_Prod.Size = new System.Drawing.Size(98, 135);
+            this.LBL_Total_Prod.Size = new System.Drawing.Size(98, 116);
             this.LBL_Total_Prod.TabIndex = 3;
             this.LBL_Total_Prod.Text = "0";
             this.LBL_Total_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1501,11 +1601,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel28.Controls.Add(this.LBL_Total_Percent);
             this.panel28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel28.Location = new System.Drawing.Point(472, 621);
+            this.panel28.Location = new System.Drawing.Point(472, 640);
             this.panel28.Margin = new System.Windows.Forms.Padding(0);
             this.panel28.Name = "panel28";
             this.panel28.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
-            this.panel28.Size = new System.Drawing.Size(102, 137);
+            this.panel28.Size = new System.Drawing.Size(102, 118);
             this.panel28.TabIndex = 23;
             // 
             // LBL_Total_Percent
@@ -1516,7 +1616,7 @@ namespace EATON_MONITOR_55
             this.LBL_Total_Percent.ForeColor = System.Drawing.Color.White;
             this.LBL_Total_Percent.Location = new System.Drawing.Point(1, 1);
             this.LBL_Total_Percent.Name = "LBL_Total_Percent";
-            this.LBL_Total_Percent.Size = new System.Drawing.Size(101, 135);
+            this.LBL_Total_Percent.Size = new System.Drawing.Size(101, 116);
             this.LBL_Total_Percent.TabIndex = 4;
             this.LBL_Total_Percent.Text = "0%";
             this.LBL_Total_Percent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1530,7 +1630,7 @@ namespace EATON_MONITOR_55
             this.panel43.Margin = new System.Windows.Forms.Padding(0);
             this.panel43.Name = "panel43";
             this.panel43.Padding = new System.Windows.Forms.Padding(1, 0, 1, 1);
-            this.panel43.Size = new System.Drawing.Size(100, 89);
+            this.panel43.Size = new System.Drawing.Size(100, 75);
             this.panel43.TabIndex = 28;
             // 
             // label2
@@ -1541,7 +1641,7 @@ namespace EATON_MONITOR_55
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(1, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 88);
+            this.label2.Size = new System.Drawing.Size(98, 74);
             this.label2.TabIndex = 2;
             this.label2.Text = "불량";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1550,11 +1650,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel44.Controls.Add(this.LBL_Spl_Bad);
             this.panel44.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel44.Location = new System.Drawing.Point(372, 89);
+            this.panel44.Location = new System.Drawing.Point(372, 75);
             this.panel44.Margin = new System.Windows.Forms.Padding(0);
             this.panel44.Name = "panel44";
             this.panel44.Padding = new System.Windows.Forms.Padding(1);
-            this.panel44.Size = new System.Drawing.Size(100, 133);
+            this.panel44.Size = new System.Drawing.Size(100, 113);
             this.panel44.TabIndex = 29;
             // 
             // LBL_Spl_Bad
@@ -1565,45 +1665,45 @@ namespace EATON_MONITOR_55
             this.LBL_Spl_Bad.ForeColor = System.Drawing.Color.White;
             this.LBL_Spl_Bad.Location = new System.Drawing.Point(1, 1);
             this.LBL_Spl_Bad.Name = "LBL_Spl_Bad";
-            this.LBL_Spl_Bad.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Spl_Bad.Size = new System.Drawing.Size(98, 111);
             this.LBL_Spl_Bad.TabIndex = 4;
             this.LBL_Spl_Bad.Text = "-";
             this.LBL_Spl_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel45
             // 
-            this.panel45.Controls.Add(this.LBL_Plug_Bad);
+            this.panel45.Controls.Add(this.LBL_Scan_Fail);
             this.panel45.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel45.Location = new System.Drawing.Point(372, 222);
+            this.panel45.Location = new System.Drawing.Point(372, 301);
             this.panel45.Margin = new System.Windows.Forms.Padding(0);
             this.panel45.Name = "panel45";
             this.panel45.Padding = new System.Windows.Forms.Padding(1);
-            this.panel45.Size = new System.Drawing.Size(100, 133);
+            this.panel45.Size = new System.Drawing.Size(100, 113);
             this.panel45.TabIndex = 30;
             // 
-            // LBL_Plug_Bad
+            // LBL_Scan_Fail
             // 
-            this.LBL_Plug_Bad.BackColor = System.Drawing.Color.SteelBlue;
-            this.LBL_Plug_Bad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LBL_Plug_Bad.Font = new System.Drawing.Font("HY견고딕", 38F);
-            this.LBL_Plug_Bad.ForeColor = System.Drawing.Color.White;
-            this.LBL_Plug_Bad.Location = new System.Drawing.Point(1, 1);
-            this.LBL_Plug_Bad.Name = "LBL_Plug_Bad";
-            this.LBL_Plug_Bad.Size = new System.Drawing.Size(98, 131);
-            this.LBL_Plug_Bad.TabIndex = 4;
-            this.LBL_Plug_Bad.Text = "0";
-            this.LBL_Plug_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.LBL_Plug_Bad.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            this.LBL_Scan_Fail.BackColor = System.Drawing.Color.SteelBlue;
+            this.LBL_Scan_Fail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LBL_Scan_Fail.Font = new System.Drawing.Font("HY견고딕", 38F);
+            this.LBL_Scan_Fail.ForeColor = System.Drawing.Color.White;
+            this.LBL_Scan_Fail.Location = new System.Drawing.Point(1, 1);
+            this.LBL_Scan_Fail.Name = "LBL_Scan_Fail";
+            this.LBL_Scan_Fail.Size = new System.Drawing.Size(98, 111);
+            this.LBL_Scan_Fail.TabIndex = 4;
+            this.LBL_Scan_Fail.Text = "0";
+            this.LBL_Scan_Fail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Scan_Fail.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
             // 
             // panel46
             // 
             this.panel46.Controls.Add(this.LBL_Link_Bad);
             this.panel46.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel46.Location = new System.Drawing.Point(372, 355);
+            this.panel46.Location = new System.Drawing.Point(372, 414);
             this.panel46.Margin = new System.Windows.Forms.Padding(0);
             this.panel46.Name = "panel46";
             this.panel46.Padding = new System.Windows.Forms.Padding(1);
-            this.panel46.Size = new System.Drawing.Size(100, 133);
+            this.panel46.Size = new System.Drawing.Size(100, 113);
             this.panel46.TabIndex = 31;
             // 
             // LBL_Link_Bad
@@ -1614,7 +1714,7 @@ namespace EATON_MONITOR_55
             this.LBL_Link_Bad.ForeColor = System.Drawing.Color.White;
             this.LBL_Link_Bad.Location = new System.Drawing.Point(1, 1);
             this.LBL_Link_Bad.Name = "LBL_Link_Bad";
-            this.LBL_Link_Bad.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Link_Bad.Size = new System.Drawing.Size(98, 111);
             this.LBL_Link_Bad.TabIndex = 4;
             this.LBL_Link_Bad.Text = "0";
             this.LBL_Link_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1624,11 +1724,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel47.Controls.Add(this.LBL_Per_Bad);
             this.panel47.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel47.Location = new System.Drawing.Point(372, 488);
+            this.panel47.Location = new System.Drawing.Point(372, 527);
             this.panel47.Margin = new System.Windows.Forms.Padding(0);
             this.panel47.Name = "panel47";
             this.panel47.Padding = new System.Windows.Forms.Padding(1);
-            this.panel47.Size = new System.Drawing.Size(100, 133);
+            this.panel47.Size = new System.Drawing.Size(100, 113);
             this.panel47.TabIndex = 32;
             // 
             // LBL_Per_Bad
@@ -1639,7 +1739,7 @@ namespace EATON_MONITOR_55
             this.LBL_Per_Bad.ForeColor = System.Drawing.Color.White;
             this.LBL_Per_Bad.Location = new System.Drawing.Point(1, 1);
             this.LBL_Per_Bad.Name = "LBL_Per_Bad";
-            this.LBL_Per_Bad.Size = new System.Drawing.Size(98, 131);
+            this.LBL_Per_Bad.Size = new System.Drawing.Size(98, 111);
             this.LBL_Per_Bad.TabIndex = 4;
             this.LBL_Per_Bad.Text = "0";
             this.LBL_Per_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1649,11 +1749,11 @@ namespace EATON_MONITOR_55
             // 
             this.panel48.Controls.Add(this.LBL_Total_Bad);
             this.panel48.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel48.Location = new System.Drawing.Point(372, 621);
+            this.panel48.Location = new System.Drawing.Point(372, 640);
             this.panel48.Margin = new System.Windows.Forms.Padding(0);
             this.panel48.Name = "panel48";
             this.panel48.Padding = new System.Windows.Forms.Padding(1);
-            this.panel48.Size = new System.Drawing.Size(100, 137);
+            this.panel48.Size = new System.Drawing.Size(100, 118);
             this.panel48.TabIndex = 33;
             // 
             // LBL_Total_Bad
@@ -1664,11 +1764,134 @@ namespace EATON_MONITOR_55
             this.LBL_Total_Bad.ForeColor = System.Drawing.Color.White;
             this.LBL_Total_Bad.Location = new System.Drawing.Point(1, 1);
             this.LBL_Total_Bad.Name = "LBL_Total_Bad";
-            this.LBL_Total_Bad.Size = new System.Drawing.Size(98, 135);
+            this.LBL_Total_Bad.Size = new System.Drawing.Size(98, 116);
             this.LBL_Total_Bad.TabIndex = 4;
             this.LBL_Total_Bad.Text = "0";
             this.LBL_Total_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LBL_Total_Bad.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            // 
+            // panel29
+            // 
+            this.panel29.Controls.Add(this.label27);
+            this.panel29.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel29.Location = new System.Drawing.Point(0, 188);
+            this.panel29.Margin = new System.Windows.Forms.Padding(0);
+            this.panel29.Name = "panel29";
+            this.panel29.Padding = new System.Windows.Forms.Padding(0, 1, 1, 1);
+            this.panel29.Size = new System.Drawing.Size(172, 113);
+            this.panel29.TabIndex = 34;
+            // 
+            // label27
+            // 
+            this.label27.BackColor = System.Drawing.Color.SteelBlue;
+            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label27.Font = new System.Drawing.Font("HY견고딕", 20F);
+            this.label27.ForeColor = System.Drawing.Color.White;
+            this.label27.Location = new System.Drawing.Point(0, 1);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(171, 111);
+            this.label27.TabIndex = 2;
+            this.label27.Text = "플러그조립";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel30
+            // 
+            this.panel30.Controls.Add(this.LBL_Plug_Plan);
+            this.panel30.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel30.Location = new System.Drawing.Point(172, 188);
+            this.panel30.Margin = new System.Windows.Forms.Padding(0);
+            this.panel30.Name = "panel30";
+            this.panel30.Padding = new System.Windows.Forms.Padding(1);
+            this.panel30.Size = new System.Drawing.Size(100, 113);
+            this.panel30.TabIndex = 35;
+            // 
+            // LBL_Plug_Plan
+            // 
+            this.LBL_Plug_Plan.BackColor = System.Drawing.Color.SteelBlue;
+            this.LBL_Plug_Plan.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LBL_Plug_Plan.Font = new System.Drawing.Font("HY견고딕", 38F);
+            this.LBL_Plug_Plan.ForeColor = System.Drawing.Color.White;
+            this.LBL_Plug_Plan.Location = new System.Drawing.Point(1, 1);
+            this.LBL_Plug_Plan.Name = "LBL_Plug_Plan";
+            this.LBL_Plug_Plan.Size = new System.Drawing.Size(98, 111);
+            this.LBL_Plug_Plan.TabIndex = 3;
+            this.LBL_Plug_Plan.Text = "0";
+            this.LBL_Plug_Plan.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Plug_Plan.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            // 
+            // panel31
+            // 
+            this.panel31.Controls.Add(this.LBL_Plug_Prod);
+            this.panel31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel31.Location = new System.Drawing.Point(272, 188);
+            this.panel31.Margin = new System.Windows.Forms.Padding(0);
+            this.panel31.Name = "panel31";
+            this.panel31.Padding = new System.Windows.Forms.Padding(1);
+            this.panel31.Size = new System.Drawing.Size(100, 113);
+            this.panel31.TabIndex = 36;
+            // 
+            // LBL_Plug_Prod
+            // 
+            this.LBL_Plug_Prod.BackColor = System.Drawing.Color.SteelBlue;
+            this.LBL_Plug_Prod.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LBL_Plug_Prod.Font = new System.Drawing.Font("HY견고딕", 38F);
+            this.LBL_Plug_Prod.ForeColor = System.Drawing.Color.White;
+            this.LBL_Plug_Prod.Location = new System.Drawing.Point(1, 1);
+            this.LBL_Plug_Prod.Name = "LBL_Plug_Prod";
+            this.LBL_Plug_Prod.Size = new System.Drawing.Size(98, 111);
+            this.LBL_Plug_Prod.TabIndex = 4;
+            this.LBL_Plug_Prod.Text = "0";
+            this.LBL_Plug_Prod.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Plug_Prod.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            // 
+            // panel49
+            // 
+            this.panel49.Controls.Add(this.LBL_Plug_Bad);
+            this.panel49.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel49.Location = new System.Drawing.Point(372, 188);
+            this.panel49.Margin = new System.Windows.Forms.Padding(0);
+            this.panel49.Name = "panel49";
+            this.panel49.Padding = new System.Windows.Forms.Padding(1);
+            this.panel49.Size = new System.Drawing.Size(100, 113);
+            this.panel49.TabIndex = 37;
+            // 
+            // LBL_Plug_Bad
+            // 
+            this.LBL_Plug_Bad.BackColor = System.Drawing.Color.SteelBlue;
+            this.LBL_Plug_Bad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LBL_Plug_Bad.Font = new System.Drawing.Font("HY견고딕", 38F);
+            this.LBL_Plug_Bad.ForeColor = System.Drawing.Color.White;
+            this.LBL_Plug_Bad.Location = new System.Drawing.Point(1, 1);
+            this.LBL_Plug_Bad.Name = "LBL_Plug_Bad";
+            this.LBL_Plug_Bad.Size = new System.Drawing.Size(98, 111);
+            this.LBL_Plug_Bad.TabIndex = 5;
+            this.LBL_Plug_Bad.Text = "0";
+            this.LBL_Plug_Bad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LBL_Plug_Bad.TextChanged += new System.EventHandler(this.LBL_Count_TextChanged);
+            // 
+            // panel54
+            // 
+            this.panel54.Controls.Add(this.LBL_Plug_Mode);
+            this.panel54.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel54.Location = new System.Drawing.Point(472, 188);
+            this.panel54.Margin = new System.Windows.Forms.Padding(0);
+            this.panel54.Name = "panel54";
+            this.panel54.Padding = new System.Windows.Forms.Padding(1, 1, 0, 1);
+            this.panel54.Size = new System.Drawing.Size(102, 113);
+            this.panel54.TabIndex = 38;
+            // 
+            // LBL_Plug_Mode
+            // 
+            this.LBL_Plug_Mode.BackColor = System.Drawing.Color.SteelBlue;
+            this.LBL_Plug_Mode.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LBL_Plug_Mode.Font = new System.Drawing.Font("HY견고딕", 28F);
+            this.LBL_Plug_Mode.ForeColor = System.Drawing.Color.White;
+            this.LBL_Plug_Mode.Location = new System.Drawing.Point(1, 1);
+            this.LBL_Plug_Mode.Name = "LBL_Plug_Mode";
+            this.LBL_Plug_Mode.Size = new System.Drawing.Size(101, 111);
+            this.LBL_Plug_Mode.TabIndex = 5;
+            this.LBL_Plug_Mode.Text = "자동";
+            this.LBL_Plug_Mode.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Timer_Change_Timer
             // 
@@ -1681,86 +1904,6 @@ namespace EATON_MONITOR_55
             this.Img_Change_Timer.Enabled = true;
             this.Img_Change_Timer.Interval = 500;
             this.Img_Change_Timer.Tick += new System.EventHandler(this.Img_Change_Timer_Tick);
-            // 
-            // Cir_Per_4
-            // 
-            this.Cir_Per_4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Per_4.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Per_4.Location = new System.Drawing.Point(777, 571);
-            this.Cir_Per_4.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Per_4.Name = "Cir_Per_4";
-            this.Cir_Per_4.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Per_4.TabIndex = 14;
-            // 
-            // Cir_Per_3
-            // 
-            this.Cir_Per_3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Per_3.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Per_3.Location = new System.Drawing.Point(691, 459);
-            this.Cir_Per_3.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Per_3.Name = "Cir_Per_3";
-            this.Cir_Per_3.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Per_3.TabIndex = 12;
-            // 
-            // Cir_Spl
-            // 
-            this.Cir_Spl.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Spl.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Spl.Location = new System.Drawing.Point(348, 786);
-            this.Cir_Spl.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Spl.Name = "Cir_Spl";
-            this.Cir_Spl.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Spl.TabIndex = 10;
-            // 
-            // Cir_Per_2
-            // 
-            this.Cir_Per_2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Per_2.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Per_2.Location = new System.Drawing.Point(864, 21);
-            this.Cir_Per_2.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Per_2.Name = "Cir_Per_2";
-            this.Cir_Per_2.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Per_2.TabIndex = 9;
-            // 
-            // Cir_Per_1
-            // 
-            this.Cir_Per_1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Per_1.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Per_1.Location = new System.Drawing.Point(737, 21);
-            this.Cir_Per_1.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Per_1.Name = "Cir_Per_1";
-            this.Cir_Per_1.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Per_1.TabIndex = 7;
-            // 
-            // Cir_Link
-            // 
-            this.Cir_Link.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Link.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Link.Location = new System.Drawing.Point(473, 79);
-            this.Cir_Link.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Link.Name = "Cir_Link";
-            this.Cir_Link.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Link.TabIndex = 5;
-            // 
-            // Cir_Laser
-            // 
-            this.Cir_Laser.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Laser.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Laser.Location = new System.Drawing.Point(282, 79);
-            this.Cir_Laser.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Laser.Name = "Cir_Laser";
-            this.Cir_Laser.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Laser.TabIndex = 3;
-            // 
-            // Cir_Plug
-            // 
-            this.Cir_Plug.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.Cir_Plug.BackColor = System.Drawing.Color.DimGray;
-            this.Cir_Plug.Location = new System.Drawing.Point(82, 79);
-            this.Cir_Plug.Margin = new System.Windows.Forms.Padding(0);
-            this.Cir_Plug.Name = "Cir_Plug";
-            this.Cir_Plug.Size = new System.Drawing.Size(80, 50);
-            this.Cir_Plug.TabIndex = 1;
             // 
             // MainForm
             // 
@@ -1833,6 +1976,11 @@ namespace EATON_MONITOR_55
             this.panel46.ResumeLayout(false);
             this.panel47.ResumeLayout(false);
             this.panel48.ResumeLayout(false);
+            this.panel29.ResumeLayout(false);
+            this.panel30.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
+            this.panel49.ResumeLayout(false);
+            this.panel54.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1918,11 +2066,11 @@ namespace EATON_MONITOR_55
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel14;
-        public System.Windows.Forms.Label LBL_Plug_Plan;
+        public System.Windows.Forms.Label label2424;
         private System.Windows.Forms.Panel panel15;
-        public System.Windows.Forms.Label LBL_Plug_Prod;
+        public System.Windows.Forms.Label label2322;
         private System.Windows.Forms.Panel panel16;
-        public System.Windows.Forms.Label LBL_Plug_Mode;
+        public System.Windows.Forms.Label label2525;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel18;
@@ -1952,13 +2100,23 @@ namespace EATON_MONITOR_55
         private System.Windows.Forms.Panel panel44;
         public System.Windows.Forms.Label LBL_Spl_Bad;
         private System.Windows.Forms.Panel panel45;
-        public System.Windows.Forms.Label LBL_Plug_Bad;
+        public System.Windows.Forms.Label LBL_Scan_Fail;
         private System.Windows.Forms.Panel panel46;
         public System.Windows.Forms.Label LBL_Link_Bad;
         private System.Windows.Forms.Panel panel47;
         public System.Windows.Forms.Label LBL_Per_Bad;
         private System.Windows.Forms.Panel panel48;
         public System.Windows.Forms.Label LBL_Total_Bad;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Panel panel30;
+        private System.Windows.Forms.Panel panel31;
+        public System.Windows.Forms.Label LBL_Plug_Prod;
+        private System.Windows.Forms.Panel panel49;
+        public System.Windows.Forms.Label LBL_Plug_Bad;
+        private System.Windows.Forms.Panel panel54;
+        public System.Windows.Forms.Label LBL_Plug_Mode;
+        public System.Windows.Forms.Label LBL_Plug_Plan;
     }
 }
 
